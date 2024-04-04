@@ -8,8 +8,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 export class DashboardComponent {
   showFiller = false;
 
-//  toggleContent() {
-//    this.showFiller = !this.showFiller;
-//  }
+  isMobile(): boolean {
+    return window.innerWidth <= 280;
+  }
 };
 
